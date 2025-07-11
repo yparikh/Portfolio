@@ -1,7 +1,10 @@
 import React from "react";
+import Header from "./components/Header";
 
 export default function App() {
   return (
+    <div>
+    <Header/>
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center px-4 text-center">
       <div className="max-w-xl">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4">
@@ -36,6 +39,7 @@ export default function App() {
           Contact: yash@email.com • © {new Date().getFullYear()}
         </footer>
       </div>
+    </div>
     </div>
   );
 }
