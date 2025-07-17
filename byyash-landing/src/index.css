@@ -1,38 +1,16 @@
 @import "tailwindcss";
 
-@layer utilities {
-  @keyframes blob-float-diagonal {
-    0%, 100% {
-      transform: translate(0px, 0px);
-    }
-    50% {
-      transform: translate(80px, -60px);
-    }
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
   }
 
-  @keyframes blob-float-circle {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(30px, -30px);
-    }
-    50% {
-      transform: translate(0px, -60px);
-    }
-    75% {
-      transform: translate(-30px, -30px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-
-  .animate-blob-float-diagonal {
-    animation: blob-float-diagonal 12s ease-in-out infinite;
-  }
-
-  .animate-blob-float-circle {
-    animation: blob-float-circle 16s ease-in-out infinite;
+  #root {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
