@@ -4,6 +4,8 @@ import {
   NavBody,
   NavItems,
   MobileNav,
+  NavbarLogo,
+  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -29,11 +31,11 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full h-24">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
-          <NavItems className="justify-items-start" items={navItems} />
+          <NavItems items={navItems} />
         </NavBody>
 
         {/* Mobile Navigation */}
@@ -59,6 +61,8 @@ export function NavbarDemo() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
+            <div className="flex w-full flex-col gap-4">
+            </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
