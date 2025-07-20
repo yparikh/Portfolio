@@ -13,6 +13,7 @@
     "@paper-design/shaders-react": "^0.0.43",
     "@tabler/icons-react": "^3.34.0",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.23.6",
     "motion": "^12.23.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
