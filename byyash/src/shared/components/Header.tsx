@@ -20,12 +20,16 @@ export function NavbarDemo() {
       link: "/",
     },
     {
-      name: "Dev",
-      link: "/dev",
+      name: "Projects",
+      link: "/projects",
     },
     {
-      name: "Art",
-      link: "/art",
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
     },
   ];
 
