@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { MeshGradient } from "@paper-design/shaders-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
+
+interface MeshGradientBackgroundProps {
+  colors: string[];
+  keyProp: string; // route pathname
+  children?: ReactNode; // allow wrapping content
+}
 
 export function MeshGradientBackground({
   colors,
   keyProp,
-}: {
-  colors: string[];
-  keyProp: string; // this is route pathname
-}) {
+  children,
+}: MeshGradientBackgroundProps) {
   const [prevColors, setPrevColors] = useState(colors);
 
   // Whenever the route changes, update the prevColors after a delay
@@ -34,9 +38,9 @@ export function MeshGradientBackground({
           speed={0.4}
           style={{
             width: "100%",
-            height: "100vh",
+            height: "100%",
             minWidth: "100%",
-            minHeight: "100vh",
+            minHeight: "100%",
             position: "absolute",
             top: 0,
             left: 0,
@@ -66,6 +70,7 @@ export function MeshGradientBackground({
           }}
         />
       </motion.div>
+       <div className="relative z-0">{children}</div>
     </div>
   );
 }

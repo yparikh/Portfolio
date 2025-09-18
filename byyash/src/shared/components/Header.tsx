@@ -4,8 +4,6 @@ import {
   NavBody,
   NavItems,
   MobileNav,
-  NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -13,7 +11,7 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export function NavbarDemo() {
+export function NavbarFull() {
   const navItems = [
     {
       name: "Home",

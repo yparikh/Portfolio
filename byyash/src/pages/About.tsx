@@ -1,11 +1,10 @@
-import { NavbarDemo } from "../shared/components/Header";
+
 
 export default function About() {
   return (
-    <div className="relative h-screen overflow-hidden">
-      <NavbarDemo />
-      <div className="flex flex-col justify-center items-center h-full text-white text-center -my-32">
-        <h1 className="text-5xl font-bold mb-4 text-shadow-lg">About </h1>
+    <>
+      <div className="flex flex-col justify-center items-center h-full text-white text-center my-32">
+        <h1 className="text-5xl font-bold mb-4 text-shadow-lg">About 👨‍💻</h1>
         <p className="text-lg leading-relaxed tracking-wider text-shadow-lg mx-32 min-w-md max-w-3xl">
           Hi, I’m Yash! A software developer with a passion for building clean,
           intuitive, and efficient applications. I enjoy working across the
@@ -22,6 +21,6 @@ export default function About() {
           growth, and contribute to building impactful software.
         </p>
       </div>
-    </div>
+    </>
   );
 }
